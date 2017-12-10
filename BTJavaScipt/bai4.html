@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function asterisk(a){
+			let index = a.indexOf("*");
+			let sum = 0;
+			for(let i; i<a.lenght;i++){
+				if(i!=index){
+					sum += parseInt(a[i]);
+				}
+			}
+			for(let i=0 ;i<=9;i++){
+				if(((sum + i)%2==0) && ((sum + i)%3==0)){
+					console.log(a.replace("*", i));
+				}
+			}
+		}
+		asterisk("1234567890*");
+	</script>
+</body>
+</html>
